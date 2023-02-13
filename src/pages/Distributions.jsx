@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Distributions = () => {
+function Distributions() {
   return (
-    <div>
-      distributions
-    </div>
+    <div>Distributions</div>
   )
 }
 

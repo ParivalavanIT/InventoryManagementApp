@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Supplier = () => {
+function Supplier() {
   return (
-    <div>
-      Supplier
-    </div>
+    <div>Supplier</div>
   )
 }
 

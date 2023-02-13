@@ -1,10 +1,8 @@
 import React from 'react'
 
-const StockDetails = () => {
+function StockDetails() {
   return (
-    <div>
-      stock details
-    </div>
+    <div>StockDetails</div>
   )
 }
 
