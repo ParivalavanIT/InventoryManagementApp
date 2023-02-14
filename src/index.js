@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import MaterialTable from "material-table";
 // pages
 import Supplier from "./pages/Supplier";
 import StockDetails from "./pages/StockDetails";

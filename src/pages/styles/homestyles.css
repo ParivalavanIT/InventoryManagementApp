@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logout{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+.logout > button{
+    padding:  10px 20px;
+    border-radius: 15px;
+}
+.cardHolder{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bloc-tabs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .active-content {
+    display: block;
+  }
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+  }
+  .active-tabs  {
+    background: white;
+    border-bottom: 1px solid transparent;
+  }
+  .tabs {
+
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    margin: 20px 0px;
+  }
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }

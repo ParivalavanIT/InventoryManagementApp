@@ -6,7 +6,7 @@
 }
 
 .card{
-    width: 40vw;
+    width: 30vw;
     display: flex;
     border: solid 0.5px gray;
     padding:50px;
@@ -14,20 +14,25 @@
     line-height: 50px;
     border-radius: 2rem;
 }
-span{
-    font-size: 1rem;
+.counter__output{
+    font-size: 5rem;
     font-weight: 100;
     color:#739eb6;
 }
-a{
-    display: flex;
-    color:#649fbf;
-    text-decoration: none;
-    align-items: baseline;
-    align-self: last baseline;
-    padding: 5px;
-}
+
 .card_component{
     display: inline-block;
     margin: 5px;
 }
+.Link{
+    position: static;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #739eb6;
+}
+.lastLine{
+    display: flex;
+    justify-content: space-between;
+}
+

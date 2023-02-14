@@ -1,9 +1,36 @@
-import React from 'react'
+import React,{useMemo} from 'react'
+import MaterialReactTable from 'material-react-table';
 
-function StockDetails() {
+export default function StockDetails() {
+  const stockData = []
+  
+    //should be memoized or stable
+    const columns = useMemo(
+      () => [
+        {
+          accessorKey: 'sno', //access nested data with dot notation
+          header: 'S.no',
+        },
+        {
+          accessorKey: 'product',
+          header: 'Product',
+        },
+        {
+          accessorKey: 'availablity', //normal accessorKey
+          header: 'Availablity',
+        },
+        {
+          accessorKey: 'view',
+          header: 'View Details',
+        },
+       
+      ],
+      [],
+    );
   return (
-    <div>StockDetails</div>
+    <>
+     <MaterialReactTable columns={columns} data={stockData} />
+    </>
   )
 }
 
-export default StockDetails
