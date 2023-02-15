@@ -2,6 +2,7 @@ import React, { useMemo , useState } from 'react'
 import Card from '../components/Card';
 import MaterialReactTable from 'material-react-table';
 import './styles/homestyles.css'
+import { Link } from 'react-router-dom';
 
 export default function Home()  
  
@@ -81,7 +82,7 @@ export default function Home()
     );
   return (
     <>
-    <div className='logout'> <button>Logout</button></div>
+    <div className='logout'> <button><Link to="/login" className='lgtbtn'>Logout</Link></button></div>
     <div className='cardHolder'>
     <Card name='delivered' year='2022-2023'/>
     <Card name='purchased' year='2022-2023'/>

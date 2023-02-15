@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    display: flex;
+}
+.topic_holder{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:2rem;
+    justify-content: space-between;
+}
+.contentpg{
+    display: flex;
+    flex-direction: column;
+}
+.contentpg>h1{
+    margin: 10px;
+}
+.contentpg>p{
+    margin: 10px;
+}
+.form_holder{
+    width: 50%;
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form_elem{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+.form_elem>input{
+    padding: 15px 80px;
+    border-radius: 0.3rem;
+}
+.lgnbtn{
+    color: white;
+}
+.loginimage{
+    align-self: flex-end;
+}

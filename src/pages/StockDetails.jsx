@@ -1,5 +1,8 @@
 import React,{useMemo} from 'react'
 import MaterialReactTable from 'material-react-table';
+import AddCircleOutlineSharpIcon from '@mui/icons-material/AddSharp';
+import { Link } from 'react-router-dom';
+import './styles/topbarstyle.css'
 
 export default function StockDetails() {
   const stockData = []
@@ -29,6 +32,13 @@ export default function StockDetails() {
     );
   return (
     <>
+    <div className='TopBar'>
+      <h1>Stock Details</h1>
+      <div>
+        <Link className='Link-2' to='/productform'><AddCircleOutlineSharpIcon/><p>Add new</p></Link>
+      </div>
+    </div>
+    <hr />
      <MaterialReactTable columns={columns} data={stockData} />
     </>
   )

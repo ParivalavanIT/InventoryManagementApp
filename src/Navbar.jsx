@@ -5,10 +5,14 @@ import Logo from '../src/logo.png'
 
 export default function NavBar() {
     
-    
+    const status=document.getElementsByClassName('nav')
+    if(window.location.pathname==="/login")
+    {
+        status.style.display='none'
+    }
     return (
        
-        <>
+        <section className="nav">
             <div id="sidebar">
                 <div className="logoHolder">
                 <img src={Logo} alt="" />
@@ -31,6 +35,6 @@ export default function NavBar() {
                     </ul>
                 </nav>
             </div>
-        </>
+        </section>
     );
 }

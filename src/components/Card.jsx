@@ -4,7 +4,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Link } from 'react-router-dom';
 
 export default function Card(props){
-    const [counter ,setCounter] =useState(999)
+    const [counter ,setCounter] =useState(0)
 
     const increase = () => {
     setCounter(count => count + 1);

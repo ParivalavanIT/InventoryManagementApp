@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .logout{
     display: flex;
@@ -11,6 +12,9 @@
 .logout > button{
     padding:  10px 20px;
     border-radius: 15px;
+}
+.lgtbtn{
+  color: white;
 }
 .cardHolder{
     display: flex;

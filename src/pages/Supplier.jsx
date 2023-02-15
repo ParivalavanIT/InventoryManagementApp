@@ -1,5 +1,8 @@
 import React,{useMemo}  from 'react'
 import MaterialReactTable from 'material-react-table'
+import AddCircleOutlineSharpIcon from '@mui/icons-material/AddSharp';
+import { Link } from 'react-router-dom';
+import './styles/topbarstyle.css'
 
 export default function Supplier() {
   const supplierData = []
@@ -33,7 +36,18 @@ export default function Supplier() {
     );
   return (
     <>
+    <div className='TopBar'>
+      <h1>
+        Supplier Details
+      </h1>
+      <div>
+      <Link className='Link-2' to='/supplierform'> <AddCircleOutlineSharpIcon/><p> Add New</p></Link>
+      </div>
+    </div>
+    <hr/>
+    <div>
      <MaterialReactTable columns={columns} data={supplierData} />
+     </div>
     </>
   )
 }
