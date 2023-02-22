@@ -11,6 +11,7 @@ import SupplierForm from "./pages/forms/supplierform";
 import ProductForm from "./pages/forms/productform";
 import DistributionForm from "./pages/forms/distributionform";
 import Login from "./pages/forms/login";
+import TransactionForm from "./pages/forms/newtransaction";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/disributionform",
         element: <DistributionForm />,
+      },
+      {
+        path: "/transaction",
+        element: <TransactionForm />,
       },
     ],
   },
